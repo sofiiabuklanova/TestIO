@@ -5,11 +5,11 @@ class TestIO
 {
     private const string InputFormat = @"\((-?\d+(?:\.\d+)?),\s*(-?\d+(?:\.\d+)?)\)";
 
-    static void Main()
+    static void Main(string[] args)
     {
-        string inputFilePath = "system_input_file.1630412935.txt";
-        string outputFilePath = "system_output_file.1630412935.txt";
-        string resultingFilePath = "test_report.txt";
+        string inputFilePath = args.Length > 0 ? args[0] : "system_input_file.1630412935.txt";
+        string outputFilePath = args.Length > 1 ? args[1] : "system_output_file.1630412935.txt";
+        string resultingFilePath = args.Length > 2 ? args[2] : "test_report.txt";
         try
         {
             var inputRectangle = ExtractRectangle("Rectangle", inputFilePath);
