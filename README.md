@@ -6,6 +6,6 @@ It checks data in them and by default creates a resulting file "test_report.txt"
 
 According to requirements, TestIO logs a reason of FAIL test into console output. 
 
-In order to try this program themself, one should download source code and build the application, create test data and run the program. To run the program with non-standard filenames or pathes, use console line to pass arguments: 
+In order to try this program themself, one should download source code and build the application, create test data and run the program. To run the program with non-standard filenames or paths, use console line to pass arguments: 
 
 `TestIO.exe input.txt output.txt test.txt`
