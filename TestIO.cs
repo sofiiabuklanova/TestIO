@@ -9,13 +9,13 @@ class TestIO
     {
         string inputFilePath = "system_input_file.1630412935.txt";
         string outputFilePath = "system_output_file.1630412935.txt";
-        string path = "test_report.txt";
+        string resultingFilePath = "test_report.txt";
         try
         {
             var inputRectangle = ExtractRectangle("Rectangle", inputFilePath);
             var inputPoints = ExtractPoints("Points", inputFilePath);
             var outputStrings = SplitFileToLines(outputFilePath);
-            var streamWriter = new StreamWriter(path, false);
+            var streamWriter = new StreamWriter(resultingFilePath, false);
             streamWriter.WriteLine($"Expected visited points \t Actual visited points \t Test result (PASS / FAIL)");
 
             for (int i = 0; i < inputPoints.Count; i++)
